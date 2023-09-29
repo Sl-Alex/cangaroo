@@ -306,7 +306,7 @@ void SLCANInterface::open()
 
 
     // Open the port
-    _serport->write("O\r\n", 3);
+    _serport->write("O\r", 2);
     _serport->flush();
 
     _isOpen = true;
